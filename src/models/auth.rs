@@ -83,6 +83,7 @@ pub struct LoginResponse {
 pub enum LoginError {
     #[error("Invalid username or password")]
     InvalidCredntials,
+    
     #[error("An unexpected internal error occurred: {0}")]
     InternalError(String),
 }
